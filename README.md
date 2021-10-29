@@ -70,12 +70,25 @@ Want to contribute simply run `hook_finder64.exe C:\windows\system32\ntdll.dll` 
 
 [McAfee hooks list](https://raw.githubusercontent.com/Mr-Un1k0d3r/EDRs/main/mcafee.txt)
 
+## CheckPoint SandBlast hooked ntdll APIs
+
+[CheckPoint SandBlast hooks list](https://github.com/Mr-Un1k0d3r/EDRs/blob/main/checkpoint-sandblast.txt)
+
+## ESET endpoint Security 8.0.2028.0 hooked ntdll APIs
+
+[Eset hooks list](https://github.com/Mr-Un1k0d3r/EDRs/blob/main/eset.txt)
+
 ### Cortex XDR hooked APIs (KERNEL MODE)
 
 :warning: These hooks are set kernel mode. They can't be unhooked from the user mode
 
 [Cortex XDR hooks list](https://raw.githubusercontent.com/Mr-Un1k0d3r/EDRs/main/cortex.txt)
 
-## Credit
+## Bitdefender hooked ntdll APIs
 
+[Bitdefender hooks list](https://github.com/Mr-Un1k0d3r/EDRs/blob/main/bitdefender.txt)
+
+## Credit
 Mr.Un1k0d3r RingZer0 Team
+
+And the whole community <3

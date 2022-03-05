@@ -22,6 +22,11 @@ ntdll.dll!NtOpenProcess at 0x00007FF873F6CAD0
 NtOpenProcess syscall ID 0x00000026 (38)
 ```
 
+# unhookIAT.c
+
+This proof-of-concept detects hooks placed by EDR/AV/Malware in the Import Address Table and replace them with original addresses ([coded by xalicex](https://github.com/xalicex/Unhook-Import-Address-Table)).
+
+
 # Excel version of the list of hooks
 
 [EDRs.xlsx formatted by Vincent Yiu](https://github.com/Mr-Un1k0d3r/EDRs/blob/main/EDRs.xlsx)
@@ -77,6 +82,10 @@ Want to contribute simply run `hook_finder64.exe C:\windows\system32\ntdll.dll` 
 ## ESET endpoint Security 8.0.2028.0 hooked ntdll APIs
 
 [Eset hooks list](https://github.com/Mr-Un1k0d3r/EDRs/blob/main/eset.txt)
+
+## TrendMicro 17.7.1130 hooked ntdll APIs
+
+[TrendMicro hooks list](https://github.com/Mr-Un1k0d3r/EDRs/blob/main/trend.txt)
 
 ### Cortex XDR hooked APIs (KERNEL MODE)
 

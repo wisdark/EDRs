@@ -9,7 +9,7 @@ This proof-of-concept is resolving the syscall ID dynamically no need to check t
 
 # patch_syscall64.c
 
-This proof-of-concept is patch the syscall ID specified in the code. The live version of the DLL is then patched using the hardcoded syscall ID and reverted to the original unpatched state.
+This proof-of-concept is patching the syscall ID specified in the code. The live version of the DLL is then patched using the hardcoded syscall ID and reverted to the original unpatched state.
 
 # get_syscall64.c
 
@@ -42,6 +42,11 @@ Want to contribute simply run `hook_finder64.exe C:\windows\system32\ntdll.dll` 
 ### CrowdStrike hooked ntdll.dll APIs
 
 [CrowdStrike hooks list](https://raw.githubusercontent.com/Mr-Un1k0d3r/EDRs/main/crowdstrike.txt)
+
+The newer version moved away from UMH and instead rely on kernel callback as shown below:
+
+![kernel callback](https://github.com/Mr-Un1k0d3r/EDRs/raw/main/kernel-callback.png)
+
 
 ### SentinelOne hooked ntdll.dll APIs
 
